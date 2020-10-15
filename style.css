@@ -1,0 +1,99 @@
+* {
+  margin: auto;
+  outline: none;
+}
+
+img {
+  float: left;
+}
+
+button {
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+button:active {
+  background-color: darkgray;
+}
+
+#prev {
+  position: absolute;
+  left: 650px;
+  top: 350px;
+}
+
+#next {
+  position: absolute;
+  left: 860px;
+  top: 350px;
+}
+
+#wrapper {
+  margin-top: 20%;
+  text-align: center;
+  max-width: 200px;
+  max-height: 120px;
+}
+
+#imagewrapper {
+  max-height: 120px;
+  min-height: 120px;
+  max-width: 100px;
+  overflow: hidden;
+  transition: right 1s ease 0s;
+  position: absolute;
+  left: 715px;
+  top: 310px;
+}
+
+#slider {
+  max-height: 100px;
+  min-height: 100px;
+  min-width: 300px;
+  right: var(--img-pos);
+  position: relative;
+  transition: right 1s ease 0s;
+}
+
+#navigation {
+  width: 100px;
+}
+
+#first {
+  background-color: var(--first-background);
+}
+
+#second {
+  background-color: var(--second-background);
+}
+
+#third {
+  background-color: var(--third-background);
+}
+
+.nav {
+  border-radius: 50px;
+  border: solid 1px black;
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  margin-left: auto;
+}
+
+.nav:hover {
+  cursor: pointer;
+}
+
+:root {
+  --img-pos: 0px;
+  --first-background: black;
+  --second-background: white;
+  --third-background: white;
+}
